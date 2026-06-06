@@ -36,8 +36,8 @@ jobs:
             ${{ runner.os }}-maven
 
       - name: Run API Tests
-		 run: mvn clean test -DsuiteXmlFile=testng.xml
-//Test
+	  run: mvn clean test
+
       - name: Upload TestNG Reports
         if: always()
         uses: actions/upload-artifact@v4
