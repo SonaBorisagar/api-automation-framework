@@ -36,7 +36,7 @@ jobs:
             ${{ runner.os }}-maven
 
       - name: Run API Tests
-	  run: mvn clean test
+        run: mvn clean test
 
       - name: Upload TestNG Reports
         if: always()
