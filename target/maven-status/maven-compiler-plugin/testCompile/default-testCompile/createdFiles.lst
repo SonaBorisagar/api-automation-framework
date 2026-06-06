@@ -1,0 +1,9 @@
+Utils\TestDataReader.class
+Utils\WireMockManager.class
+tests\ProductApiTest.class
+tests\UserApiTest.class
+Config\Environment.class
+Utils\ConfigReader.class
+tests\CreateUserTest.class
+Utils\JsonUtils.class
+Config\Constants.class

@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/products"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "id": 1,
+        "name": "Laptop"
+      },
+      {
+        "id": 2,
+        "name": "Mouse"
+      }
+    ]
+  }
+}

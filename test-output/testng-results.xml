@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-06T20:55:23 IST" name="Suite" finished-at="2026-06-06T20:55:25 IST" duration-ms="2520">
+    <groups>
+    </groups>
+    <test started-at="2026-06-06T20:55:23 IST" name="Test" finished-at="2026-06-06T20:55:25 IST" duration-ms="2520">
+      <class name="tests.ProductApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductApiTest@3b0090a4]" started-at="2026-06-06T20:55:23 IST" name="setup" finished-at="2026-06-06T20:55:23 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyProducts()[pri:0, instance:tests.ProductApiTest@3b0090a4]" started-at="2026-06-06T20:55:23 IST" name="verifyProducts" finished-at="2026-06-06T20:55:25 IST" duration-ms="1966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProducts -->
+      </class> <!-- tests.ProductApiTest -->
+      <class name="tests.CreateUserTest">
+        <test-method is-config="true" signature="startMock()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:22 IST" name="startMock" finished-at="2026-06-06T20:55:23 IST" duration-ms="1081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMock -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:25 IST" name="setup" finished-at="2026-06-06T20:55:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUser()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:25 IST" name="createUser" finished-at="2026-06-06T20:55:25 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method is-config="true" signature="stopMock()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:25 IST" name="stopMock" finished-at="2026-06-06T20:55:25 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopMock -->
+      </class> <!-- tests.CreateUserTest -->
+      <class name="tests.UserApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UserApiTest@74e52ef6]" started-at="2026-06-06T20:55:25 IST" name="setup" finished-at="2026-06-06T20:55:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserDetails()[pri:0, instance:tests.UserApiTest@74e52ef6]" started-at="2026-06-06T20:55:25 IST" name="verifyUserDetails" finished-at="2026-06-06T20:55:25 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserDetails -->
+      </class> <!-- tests.UserApiTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
