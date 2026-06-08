@@ -22,3 +22,11 @@ API Name: reqres API
 GET /users/1
 POST /users
 GET /products
+
+
+
+
+
+Author
+Sona Borisagar
+
