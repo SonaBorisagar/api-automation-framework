@@ -10,9 +10,14 @@ mvn clean test -Denv=qa
 
 ## WireMock Port
 
-8089
+8081
 
 ## Stubbed APIs
+
+BaseURL: https://reqres.in/api
+http://localhost:8081
+
+API Name: reqres API
 
 GET /users/1
 POST /users

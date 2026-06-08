@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/users/1"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "message": "User Updated"
+    }
+  }
+}

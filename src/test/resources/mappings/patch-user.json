@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "PATCH",
+    "url": "/users/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "message": "User Partially Updated"
+    }
+  }
+}

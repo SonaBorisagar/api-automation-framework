@@ -5,6 +5,9 @@
   },
   "response": {
     "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
     "jsonBody": {
       "message": "User Created",
       "id": 101

@@ -1,49 +1,293 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-06T20:55:23 IST" name="Suite" finished-at="2026-06-06T20:55:25 IST" duration-ms="2520">
+  <suite started-at="2026-06-08T19:41:55 IST" name="API Automation Suite" finished-at="2026-06-08T19:41:59 IST" duration-ms="4721">
     <groups>
     </groups>
-    <test started-at="2026-06-06T20:55:23 IST" name="Test" finished-at="2026-06-06T20:55:25 IST" duration-ms="2520">
+    <test started-at="2026-06-08T19:41:55 IST" name="API Tests" finished-at="2026-06-08T19:41:59 IST" duration-ms="4721">
       <class name="tests.ProductApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductApiTest@3b0090a4]" started-at="2026-06-06T20:55:23 IST" name="setup" finished-at="2026-06-06T20:55:23 IST" duration-ms="400" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="setup" finished-at="2026-06-08T19:41:59 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyProducts()[pri:0, instance:tests.ProductApiTest@3b0090a4]" started-at="2026-06-06T20:55:23 IST" name="verifyProducts" finished-at="2026-06-06T20:55:25 IST" duration-ms="1966" status="PASS">
+        <test-method signature="verifyResponseTime()[pri:4, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="verifyResponseTime" finished-at="2026-06-08T19:41:59 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProducts -->
+        </test-method> <!-- verifyResponseTime -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.ProductApiTest.verifyResponseTime()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResponseTime status=SUCCESS method=ProductApiTest.verifyResponseTime()[pri:4, instance:tests.ProductApiTest@3098cf3b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.ProductApiTest.verifyProductCount()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyProductCount()[pri:5, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="verifyProductCount" finished-at="2026-06-08T19:41:59 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductCount -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductCount status=SUCCESS method=ProductApiTest.verifyProductCount()[pri:5, instance:tests.ProductApiTest@3098cf3b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.ProductApiTest.verifyProductDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyProductDetails()[pri:6, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="verifyProductDetails" finished-at="2026-06-08T19:41:59 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.ProductApiTest@3098cf3b]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductDetails status=SUCCESS method=ProductApiTest.verifyProductDetails()[pri:6, instance:tests.ProductApiTest@3098cf3b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- tests.ProductApiTest -->
       <class name="tests.CreateUserTest">
-        <test-method is-config="true" signature="startMock()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:22 IST" name="startMock" finished-at="2026-06-06T20:55:23 IST" duration-ms="1081" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startMock -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:25 IST" name="setup" finished-at="2026-06-06T20:55:25 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createUser()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:25 IST" name="createUser" finished-at="2026-06-06T20:55:25 IST" duration-ms="56" status="PASS">
+        <test-method signature="createUser()[pri:7, instance:tests.CreateUserTest@610f7aa]" started-at="2026-06-08T19:41:59 IST" name="createUser" finished-at="2026-06-08T19:41:59 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method is-config="true" signature="stopMock()[pri:0, instance:tests.CreateUserTest@198b6731]" started-at="2026-06-06T20:55:25 IST" name="stopMock" finished-at="2026-06-06T20:55:25 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.CreateUserTest@610f7aa]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CreateUserTest.createUser()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopMock -->
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.CreateUserTest@610f7aa]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=CreateUserTest.createUser()[pri:7, instance:tests.CreateUserTest@610f7aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.CreateUserTest@610f7aa]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CreateUserTest.verifyCreateUserResponse()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyCreateUserResponse()[pri:8, instance:tests.CreateUserTest@610f7aa]" started-at="2026-06-08T19:41:59 IST" name="verifyCreateUserResponse" finished-at="2026-06-08T19:41:59 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateUserResponse -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.CreateUserTest@610f7aa]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateUserResponse status=SUCCESS method=CreateUserTest.verifyCreateUserResponse()[pri:8, instance:tests.CreateUserTest@610f7aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- tests.CreateUserTest -->
       <class name="tests.UserApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UserApiTest@74e52ef6]" started-at="2026-06-06T20:55:25 IST" name="setup" finished-at="2026-06-06T20:55:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:55 IST" name="setup" finished-at="2026-06-08T19:41:55 IST" duration-ms="426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserDetails()[pri:0, instance:tests.UserApiTest@74e52ef6]" started-at="2026-06-06T20:55:25 IST" name="verifyUserDetails" finished-at="2026-06-06T20:55:25 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:55 IST" name="startServer" finished-at="2026-06-08T19:41:57 IST" duration-ms="1457" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserDetails -->
+        </test-method> <!-- startServer -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:57 IST" name="beforeTest" finished-at="2026-06-08T19:41:57 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.UserApiTest.verifyStatusCode()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyStatusCode()[pri:1, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:57 IST" name="verifyStatusCode" finished-at="2026-06-08T19:41:58 IST" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCode -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:58 IST" name="afterTest" finished-at="2026-06-08T19:41:58 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyStatusCode status=SUCCESS method=UserApiTest.verifyStatusCode()[pri:1, instance:tests.UserApiTest@175b9425] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:58 IST" name="beforeTest" finished-at="2026-06-08T19:41:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.UserApiTest.verifyResponseBody()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyResponseBody()[pri:2, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:58 IST" name="verifyResponseBody" finished-at="2026-06-08T19:41:59 IST" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResponseBody -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResponseBody status=SUCCESS method=UserApiTest.verifyResponseBody()[pri:2, instance:tests.UserApiTest@175b9425] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.UserApiTest.verifyHeaders()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyHeaders()[pri:3, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:59 IST" name="verifyHeaders" finished-at="2026-06-08T19:41:59 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeaders -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.UserApiTest@175b9425]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHeaders status=SUCCESS method=UserApiTest.verifyHeaders()[pri:3, instance:tests.UserApiTest@175b9425] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- tests.UserApiTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      <class name="tests.UpdateUserTest">
+        <test-method signature="updateUser()[pri:9, instance:tests.UpdateUserTest@6a03bcb1]" started-at="2026-06-08T19:41:59 IST" name="updateUser" finished-at="2026-06-08T19:41:59 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.UpdateUserTest@6a03bcb1]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.UpdateUserTest.updateUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.UpdateUserTest@6a03bcb1]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUser status=SUCCESS method=UpdateUserTest.updateUser()[pri:9, instance:tests.UpdateUserTest@6a03bcb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.UpdateUserTest -->
+      <class name="tests.DeleteUserTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:tests.DeleteUserTest@21b2e768]" started-at="2026-06-08T19:41:59 IST" name="beforeTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.DeleteUserTest.deleteUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="deleteUser()[pri:10, instance:tests.DeleteUserTest@21b2e768]" started-at="2026-06-08T19:41:59 IST" name="deleteUser" finished-at="2026-06-08T19:41:59 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.DeleteUserTest@21b2e768]" started-at="2026-06-08T19:41:59 IST" name="afterTest" finished-at="2026-06-08T19:41:59 IST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteUser status=SUCCESS method=DeleteUserTest.deleteUser()[pri:10, instance:tests.DeleteUserTest@21b2e768] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.DeleteUserTest -->
+    </test> <!-- API Tests -->
+  </suite> <!-- API Automation Suite -->
 </testng-results>

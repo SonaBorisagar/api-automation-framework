@@ -10,8 +10,7 @@
     },
     "jsonBody": {
       "id": 1,
-      "name": "John Doe",
-      "email": "john@test.com"
+      "name": "John Doe"
     }
   }
 }

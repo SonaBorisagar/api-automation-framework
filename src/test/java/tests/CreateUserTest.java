@@ -1,47 +1,42 @@
 package tests;
 
-import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import Utils.ConfigReader;
-import Utils.WireMockManager;
+public class CreateUserTest extends BaseTest{
 
-public class CreateUserTest {
-	
-	@BeforeSuite
-	public void startMock() {
-	    WireMockManager.startServer();
-	}
-
-	@AfterSuite
-	public void stopMock() {
-	    WireMockManager.stopServer();
-	}
-	
-	@BeforeClass
-	public void setup() {
-	    RestAssured.baseURI = ConfigReader.getBaseUrl();
-	}
-
-    @Test
+    @Test(priority = 7)
     public void createUser() {
 
-    	String payload =
-    	        "{\n" +
-    	        "  \"name\":\"John\"\n" +
-    	        "}";
+        String payload =
+                "{\"name\":\"John Doe\"}";
 
-        RestAssured
-                .given()
-                .contentType("application/json")
-                .body(payload)
-                .when()
-                .post("/users")
-                .then()
-                .statusCode(201);
+        given()
+            .contentType("application/json")
+            .body(payload)
+        .when()
+            .post("/users")
+        .then()
+            .statusCode(201);
+    }
+
+    @Test(priority = 8)
+    public void verifyCreateUserResponse() {
+
+        String payload =
+                "{\"name\":\"John Doe\"}";
+
+        given()
+            .contentType("application/json")
+            .body(payload)
+        .when()
+            .post("/users")
+        .then()
+            .body("message",
+                  equalTo("User created"))
+            .body("id",
+                  equalTo(101));
     }
 }

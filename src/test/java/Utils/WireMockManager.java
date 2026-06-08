@@ -1,53 +1,103 @@
 package Utils;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
+import com.github.tomakehurst.wiremock.client.WireMock;
+import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
+
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
-
-import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class WireMockManager {
 
-    private static WireMockServer wireMockServer;
+    public static WireMockServer wireMockServer;
+    
+    @BeforeClass 
+    public static void start() {
 
-    public static void startServer() {
+        try {
+            wireMockServer = new WireMockServer(
+                    WireMockConfiguration.options()
+                            .port(8081)
+                            .usingFilesUnderClasspath("mappings")
+            );
 
-        wireMockServer = new WireMockServer(
-                options()
-                        .port(8089)
-                        .usingFilesUnderClasspath("")
-        );
+            wireMockServer.start();
+            
+            System.out.println("WireMock started on port: " + wireMockServer.port());
+            
+            System.out.println("WireMock running: " + wireMockServer.isRunning());
+            
+            WireMock.configureFor("localhost", 8081);
+            WireMock.resetAllRequests();
 
-        wireMockServer.start();
-        
+            // ✅ ADD ALL STUBS HERE 👇
 
-        wireMockServer.stubFor(get(urlEqualTo("/products"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withHeader("Content-Type", "application/json")
-                        .withBody("[{\"id\":1,\"name\":\"Laptop\"},{\"id\":2,\"name\":\"Mouse\"}]")));
+            stubFor(post(urlEqualTo("/users"))
+            	    .willReturn(aResponse()
+            	        .withStatus(201)
+            	        .withHeader("Content-Type", "application/json")
+            	        .withBody("{\"id\":101,\"message\":\"User created\"}")
+            	    ));
 
-        wireMockServer.stubFor(get(urlEqualTo("/users/1"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withHeader("Content-Type", "application/json")
-                        .withBody("{\"id\":1,\"name\":\"John Doe\"}")));
+            stubFor(get(urlPathMatching("/users/.*"))
+            	    .willReturn(aResponse()
+            	        .withStatus(200)
+            	        .withHeader("Content-Type", "application/json")
+            	        .withBody("{\"id\":1,\"name\":\"John Doe\"}")
+            	    ));
+            
+            stubFor(get(urlEqualTo("/users"))
+            	    .willReturn(aResponse()
+            	        .withStatus(200)
+            	        .withHeader("Content-Type", "application/json")
+            	        .withBody("{\"id\":1},{\"id\":2}")
+            	    ));
 
-        wireMockServer.stubFor(post(urlEqualTo("/users"))
-                .willReturn(aResponse()
-                        .withStatus(201)
-                        .withHeader("Content-Type", "application/json")
-                        .withBody("{\"message\":\"User Created\",\"id\":101}")));
+            stubFor(put(urlMatching("/users/.*"))
+            	    .willReturn(aResponse()
+            	        .withStatus(200)
+            	        .withHeader("Content-Type", "application/json")
+            	        .withBody("{\"message\":\"User Updated\"}")
+            	    ));
 
-        System.out.println("Loaded mappings: "
-                + wireMockServer.listAllStubMappings().getMappings().size());
+            stubFor(delete(urlMatching("/users/.*"))
+            	    .willReturn(aResponse()
+            	        .withStatus(204)
+            	    ));
+            
+            
+            stubFor(get(urlEqualTo("/products"))
+            	    .willReturn(aResponse()
+            	        .withStatus(200)
+            	        .withHeader("Content-Type", "application/json")
+            	        .withBody("[\n" +
+            	            "  {\n" +
+            	            "    \"id\": 1,\n" +
+            	            "    \"name\": \"Laptop\"\n" +
+            	            "  },\n" +
+            	            "  {\n" +
+            	            "    \"id\": 2,\n" +
+            	            "    \"name\": \"Mouse\"\n" +
+            	            "  }\n" +
+            	        "]")
+            	    ));
+            
+            System.out.println("WireMock started successfully");
 
-        System.out.println("WireMock started on port 8089");
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("WireMock failed to start");
+        }
     }
 
-    public static void stopServer() {
+    @AfterClass
+    public static void stop() {
         if (wireMockServer != null) {
             wireMockServer.stop();
         }
     }
+    
+    
 }

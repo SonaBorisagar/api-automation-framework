@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/users/999"
+  },
+  "response": {
+    "status": 404,
+    "jsonBody": {
+      "error": "User not found"
+    }
+  }
+}
