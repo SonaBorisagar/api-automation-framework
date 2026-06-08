@@ -15,6 +15,9 @@ mvn clean test -Denv=qa
 ## Stubbed APIs
 
 BaseURL: https://reqres.in/api
+ExtentReport: https://sonaborisagar.github.io/api-automation-framework/test-output/ExtentReport.html
+
+
 http://localhost:8081
 
 API Name: reqres API
